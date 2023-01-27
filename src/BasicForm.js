@@ -7,7 +7,7 @@ const BasicForm = ({ addTodo }) => (
     <h1>TODO</h1>
     <Formik
       initialValues={{
-        todo: ""
+        todo: "",
       }}
       onSubmit={(values, { resetForm }) => {
         addTodo(values.todo);
